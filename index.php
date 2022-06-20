@@ -2,6 +2,7 @@
 
 require_once __DIR__ . "/class/cibo.php";
 require_once __DIR__ . "/class/giochi.php";
+require_once __DIR__ . "/class/cucce.php";
 
 ?>
 
@@ -15,7 +16,7 @@ require_once __DIR__ . "/class/giochi.php";
     <title>php-oop-2</title>
 </head>
 <body>
-    <h1>PRODOTTO</h1>
+    <h2>PRODOTTI CANI</h2>
     <div class="animal-box">
         <div>
             <div class="prodotto cane">
@@ -45,8 +46,22 @@ require_once __DIR__ . "/class/giochi.php";
                 <p>Prezzo: <?php echo $frisbeeCane->gettoyPrice()?></p>
             </div>
         </div>
+        <div>
+            <div class="prodotto cane">
+                <p>Tipologia: <?php echo $cucciaCane->getType()?></p>
+                <p>Per: <?php echo $cucciaCane->getAnimal()?></p>
+                <p>Varietà: <?php echo $cucciaCane->getcucciaType()?></p>
+                <p>Prezzo: <?php echo $cucciaCane->getcucciaPrice()?></p>
+            </div>
+            <div class="prodotto cane">
+                <p>Tipologia: <?php echo $casaCane->getType()?></p>
+                <p>Per: <?php echo $casaCane->getAnimal()?></p>
+                <p>Varietà: <?php echo $casaCane->getcucciaType()?></p>
+                <p>Prezzo: <?php echo $casaCane->getcucciaPrice()?></p>
+            </div>
+        </div>
     </div>
-    
+    <h2>PRODOTTI GATTI</h2>
     <div class="animal-box">
         <div>
             <div class="prodotto gatto">
@@ -74,6 +89,20 @@ require_once __DIR__ . "/class/giochi.php";
                 <p>Per: <?php echo $topoGatto->getAnimal()?></p>
                 <p>Varietà: <?php echo $topoGatto->gettoyType()?></p>
                 <p>Prezzo: <?php echo $topoGatto->gettoyPrice()?></p>
+            </div>
+        </div>
+        <div>
+            <div class="prodotto gatto">
+                <p>Tipologia: <?php echo $cucciaGatto->getType()?></p>
+                <p>Per: <?php echo $cucciaGatto->getAnimal()?></p>
+                <p>Varietà: <?php echo $cucciaGatto->getcucciaType()?></p>
+                <p>Prezzo: <?php echo $cucciaGatto->getcucciaPrice()?></p>
+            </div>
+            <div class="prodotto gatto">
+                <p>Tipologia: <?php echo $casaGatto->getType()?></p>
+                <p>Per: <?php echo $casaGatto->getAnimal()?></p>
+                <p>Varietà: <?php echo $casaGatto->getcucciaType()?></p>
+                <p>Prezzo: <?php echo $casaGatto->getcucciaPrice()?></p>
             </div>
         </div>
     </div>

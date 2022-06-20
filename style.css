@@ -6,7 +6,7 @@
 
 .animal-box{
     display: flex;
-    width: 400px;
+    width: 1000px;
     justify-content: space-around;
 }
 

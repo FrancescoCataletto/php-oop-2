@@ -110,10 +110,16 @@ require_once __DIR__ . "/user-class/user.php";
     </div>
     <h2>USERS</h2>
     <div>
-        <p>Nome: <?php echo $utenteProva->getName()?></p>
-        <p>Cognome: <?php echo $utenteProva->getSurname()?></p>
-        <p>Carta di credito: <?php echo $utenteProva->getCreditCard()?></p>
-        <p>Validità: <?php echo $utenteProva->getValidity()?></p>
+        <p>Nome: <?php echo $francesco->getName()?></p>
+        <p>Cognome: <?php echo $francesco->getSurname()?></p>
+        <p>Carta di credito: <?php echo $francesco->getCreditCard()?></p>
+        <p>Validità: <?php echo $francesco->getValidity()?></p>
+    </div>
+    <div>
+        <p>Nome: <?php echo $stefano->getName()?></p>
+        <p>Cognome: <?php echo $stefano->getSurname()?></p>
+        <p>Carta di credito: <?php echo $stefano->getCreditCard()?></p>
+        <p>Validità: <?php echo $stefano->getValidity()?></p>
     </div>
     
 </body>

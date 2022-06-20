@@ -55,5 +55,6 @@ class User{
     }
 }
 
-$utenteProva = new User("Francesco", "Cataletto", "False");
+$francesco = new User("Francesco", "Cataletto", "True");
+$stefano = new User("Stefano", "Corradi", "False");
 ?>

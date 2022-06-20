@@ -21,3 +21,16 @@
 .prodotto.gatto{
     background-color: aquamarine;
 }
+
+.utente{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.utente.consentito{
+    background-color: lightgreen;
+}
+
+.utente.negato{
+    background-color: lightcoral;
+}

@@ -130,13 +130,13 @@ $stefano = new User("Stefano", "Corradi", "False");
         </div>
     </div>
     <h2>USERS</h2>
-    <div>
+    <div class="utente consentito">
         <p>Nome: <?php echo $francesco->getName()?></p>
         <p>Cognome: <?php echo $francesco->getSurname()?></p>
         <p>Carta di credito: <?php echo $francesco->getCreditCard()?></p>
         <p>Validità: <?php echo $francesco->getValidity()?></p>
     </div>
-    <div>
+    <div class="utente negato">
         <p>Nome: <?php echo $stefano->getName()?></p>
         <p>Cognome: <?php echo $stefano->getSurname()?></p>
         <p>Carta di credito: <?php echo $stefano->getCreditCard()?></p>

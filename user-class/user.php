@@ -3,7 +3,7 @@
 class User{
     private $name;
     private $surname;
-    private $creditCard;
+    public $creditCard;
     private $validity;
     public $price;
 

@@ -20,7 +20,7 @@ class Registration extends User{
     }
 
     public function setDiscount(){
-        if($this->signed === "Yes"){
+        if($this->signed === "Yes" && $this->creditCard === "True"){
             $this->discounted = ($this->price * 0.8);
         }else{
             $this->discounted = "Nessuno sconto applicato";

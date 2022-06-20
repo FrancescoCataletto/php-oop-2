@@ -1,6 +1,6 @@
 <?php
 
-$prova = "Funziona"
+require_once __DIR__ . "/class/product.php";
 
 ?>
 
@@ -13,6 +13,8 @@ $prova = "Funziona"
     <title>php-oop-2</title>
 </head>
 <body>
-    <h1><?php echo $prova ?></h1>
+    <h1>PRODOTTO</h1>
+    <p><?php echo $prodotto->getType()?></p>
+    <p><?php echo $prodotto->getAnimal()?></p>
 </body>
 </html>

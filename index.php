@@ -1,8 +1,10 @@
 <?php
 
-require_once __DIR__ . "/class/cibo.php";
-require_once __DIR__ . "/class/giochi.php";
-require_once __DIR__ . "/class/cucce.php";
+require_once __DIR__ . "/product-class/cibo.php";
+require_once __DIR__ . "/product-class/giochi.php";
+require_once __DIR__ . "/product-class/cucce.php";
+require_once __DIR__ . "/user-class/user.php";
+
 
 ?>
 
@@ -105,6 +107,12 @@ require_once __DIR__ . "/class/cucce.php";
                 <p>Prezzo: <?php echo $casaGatto->getcucciaPrice()?></p>
             </div>
         </div>
+    </div>
+    <h2>USERS</h2>
+    <div>
+        <p>Nome: <?php echo $utenteProva->getName()?></p>
+        <p>Cognome: <?php echo $utenteProva->getSurname()?></p>
+        <p>Validità: <?php echo $utenteProva->getCreditCard()?></p>
     </div>
     
 </body>

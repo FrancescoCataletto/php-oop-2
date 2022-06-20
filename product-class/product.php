@@ -1,8 +1,8 @@
 <?php
 
 class Product{
-    public $type;
-    public $forWhichAnimal;
+    private $type;
+    private $forWhichAnimal;
 
     public function __construct($_type, $_forWhichAnimal){
         $this->type = $_type;

@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . "/class/product.php";
+require_once __DIR__ . "/class/cibo.php";
 
 ?>
 
@@ -14,7 +14,9 @@ require_once __DIR__ . "/class/product.php";
 </head>
 <body>
     <h1>PRODOTTO</h1>
-    <p><?php echo $prodotto->getType()?></p>
-    <p><?php echo $prodotto->getAnimal()?></p>
+    <p><?php echo $crocchette->getType()?></p>
+    <p><?php echo $crocchette->getAnimal()?></p>
+    <p><?php echo $crocchette->getfoodType()?></p>
+    <p><?php echo $crocchette->getfoodPrice()?></p>
 </body>
 </html>

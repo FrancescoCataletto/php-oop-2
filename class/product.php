@@ -28,5 +28,4 @@ class Product{
     }
 }
 
-$prodotto = new Product("Cibo", "Cane");
 ?>

@@ -5,11 +5,13 @@ class User{
     private $surname;
     private $creditCard;
     private $validity;
+    public $price;
 
-    public function __construct($_name, $_surname, $_creditCard){
+    public function __construct($_name, $_surname, $_creditCard, $_price){
         $this->name = $_name;
         $this->surname = $_surname;
         $this->creditCard = $_creditCard;
+        $this->price = $_price;
 
         $this->setValidity();
     }
@@ -25,7 +27,10 @@ class User{
 
     public function setCreditcard($_creditCard){
         $this->creditCard = $_creditCard;
+    }
 
+    public function setPrice($_price){
+        $this->price = $_price;
     }
 
     public function setValidity(){
@@ -48,6 +53,10 @@ class User{
 
     public function getCreditCard(){
         return $this->creditCard;
+    }
+
+    public function getPrice(){
+        return $this->price;
     }
 
     public function getValidity(){

@@ -3,7 +3,7 @@
 require_once __DIR__ . "/product-class/cibo.php";
 require_once __DIR__ . "/product-class/giochi.php";
 require_once __DIR__ . "/product-class/cucce.php";
-require_once __DIR__ . "/user-class/user.php";
+require_once __DIR__ . "/user-class/registration.php";
 
 // GIOCHI
 $pallaCane = new Gioco("Gioco", "Cane", "Palla", "20 euro");
@@ -24,8 +24,8 @@ $crocchetteGatti = new Cibo("Cibo", "Gatti", "Crocchette", "20 euro");
 $umidoGatti = new Cibo("Cibo", "Gatti", "Umido", "25 euro");
 
 // UTENTI
-$francesco = new User("Francesco", "Cataletto", "True");
-$stefano = new User("Stefano", "Corradi", "False");
+$francesco = new Registration("Francesco", "Cataletto", "True", 40, "Yes");
+$stefano = new Registration("Stefano", "Corradi", "False", 60, "No");
 
 ?>
 
@@ -134,12 +134,16 @@ $stefano = new User("Stefano", "Corradi", "False");
         <p>Nome: <?php echo $francesco->getName()?></p>
         <p>Cognome: <?php echo $francesco->getSurname()?></p>
         <p>Carta di credito: <?php echo $francesco->getCreditCard()?></p>
+        <p>Da pagare: <?php echo $francesco->getPrice()?></p>
+        <p>Prezzo scontato: <?php echo $francesco->getDiscount()?></p>
         <p>Validità: <?php echo $francesco->getValidity()?></p>
     </div>
     <div class="utente negato">
         <p>Nome: <?php echo $stefano->getName()?></p>
         <p>Cognome: <?php echo $stefano->getSurname()?></p>
         <p>Carta di credito: <?php echo $stefano->getCreditCard()?></p>
+        <p>Da pagare: <?php echo $stefano->getPrice()?></p>
+        <p>Prezzo scontato: <?php echo $stefano->getDiscount()?></p>
         <p>Validità: <?php echo $stefano->getValidity()?></p>
     </div>
     

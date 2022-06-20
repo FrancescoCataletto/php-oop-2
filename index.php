@@ -5,6 +5,27 @@ require_once __DIR__ . "/product-class/giochi.php";
 require_once __DIR__ . "/product-class/cucce.php";
 require_once __DIR__ . "/user-class/user.php";
 
+// GIOCHI
+$pallaCane = new Gioco("Gioco", "Cane", "Palla", "20 euro");
+$frisbeeCane = new Gioco("Gioco", "Cane", "Frisbee", "30 euro");
+$pallaGatto = new Gioco("Gioco", "Gatto", "Palla", "10 euro");
+$topoGatto = new Gioco("Gioco", "Gatto", "Topo", "25 euro");
+
+// CUCCE
+$cucciaCane = new Cuccia("Cuccia", "Cane", "Cuccia morbida", "25 euro");
+$casaCane = new Cuccia("Cuccia", "Cane", "Casa in legno", "50 euro");
+$cucciaGatto = new Cuccia("Cuccia", "Gatto", "Cuscino morbido", "10 euro");
+$casaGatto = new Cuccia("Cuccia", "Gatto", "Castello", "40 euro");
+
+// CIBO
+$crocchetteCani = new Cibo("Cibo", "Cani", "Crocchette", "10 euro");
+$umidoCani = new Cibo("Cibo", "Cani", "Umido", "15 euro");
+$crocchetteGatti = new Cibo("Cibo", "Gatti", "Crocchette", "20 euro");
+$umidoGatti = new Cibo("Cibo", "Gatti", "Umido", "25 euro");
+
+// UTENTI
+$francesco = new User("Francesco", "Cataletto", "True");
+$stefano = new User("Stefano", "Corradi", "False");
 
 ?>
 

@@ -31,9 +31,4 @@ class Gioco extends Product{
         return $this->toyPrice;
     }
 }
-
-$pallaCane = new Gioco("Gioco", "Cane", "Palla", "20 euro");
-$frisbeeCane = new Gioco("Gioco", "Cane", "Frisbee", "30 euro");
-$pallaGatto = new Gioco("Gioco", "Gatto", "Palla", "10 euro");
-$topoGatto = new Gioco("Gioco", "Gatto", "Topo", "25 euro");
 ?>

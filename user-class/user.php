@@ -54,7 +54,4 @@ class User{
         return $this->validity;
     }
 }
-
-$francesco = new User("Francesco", "Cataletto", "True");
-$stefano = new User("Stefano", "Corradi", "False");
 ?>

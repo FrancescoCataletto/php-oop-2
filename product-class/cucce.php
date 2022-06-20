@@ -31,9 +31,4 @@ class Cuccia extends Product{
         return $this->cucciaPrice;
     }
 }
-
-$cucciaCane = new Cuccia("Cuccia", "Cane", "Cuccia morbida", "25 euro");
-$casaCane = new Cuccia("Cuccia", "Cane", "Casa in legno", "50 euro");
-$cucciaGatto = new Cuccia("Cuccia", "Gatto", "Cuscino morbido", "10 euro");
-$casaGatto = new Cuccia("Cuccia", "Gatto", "Castello", "40 euro");
 ?>

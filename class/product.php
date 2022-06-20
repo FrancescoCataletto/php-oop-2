@@ -27,5 +27,4 @@ class Product{
         return $this->forWhichAnimal;
     }
 }
-
 ?>

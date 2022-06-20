@@ -32,5 +32,8 @@ class Cibo extends Product{
     }
 }
 
-$crocchette = new Cibo("uno", "due", "tre", "quattro");
+$crocchetteCani = new Cibo("Cibo", "Cani", "Crocchette", "10 euro");
+$umidoCani = new Cibo("Cibo", "Cani", "Umido", "15 euro");
+$crocchetteGatti = new Cibo("Cibo", "Gatti", "Crocchette", "20 euro");
+$umidoGatti = new Cibo("Cibo", "Gatti", "Umido", "25 euro");
 ?>

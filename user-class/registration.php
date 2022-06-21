@@ -3,7 +3,7 @@
 require_once __DIR__ . "/user.php";
 
 class Registration extends User{
-    private $signed;
+    private $signed = 1;
     private $discounted;
 
     public function __construct($_name, $_surname, $_creditCard, $_price, $_signed){
@@ -20,7 +20,7 @@ class Registration extends User{
     }
 
     public function setDiscount(){
-        if($this->signed === "Yes" && $this->creditCard === "True"){
+        if($this->signed && $this->creditCard){
             $this->discounted = ($this->price * 0.8);
         }else{
             $this->discounted = "Nessuno sconto applicato";

@@ -24,8 +24,8 @@ $crocchetteGatti = new Cibo("Cibo", "Gatti", "Crocchette", "20 euro");
 $umidoGatti = new Cibo("Cibo", "Gatti", "Umido", "25 euro");
 
 // UTENTI
-$francesco = new Registration("Francesco", "Cataletto", 1, 40, "Yes");
-$stefano = new Registration("Stefano", "Corradi", 0, 60, "No");
+$francesco = new Registration("Francesco", "Cataletto", 1, 40, 1);
+$stefano = new Registration("Stefano", "Corradi", 0, 60, 0);
 
 ?>
 

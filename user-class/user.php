@@ -3,7 +3,7 @@
 class User{
     private $name;
     private $surname;
-    public $creditCard;
+    public $creditCard = 1;
     private $validity;
     public $price;
 
@@ -34,7 +34,7 @@ class User{
     }
 
     public function setValidity(){
-        if($this->creditCard === "True"){
+        if($this->creditCard){
             $this->validity = "La carta di credito è valida";
         }else{
             $this->validity = "Transazione negata: carta di credito non valida per l'acquisto.";

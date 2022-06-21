@@ -24,8 +24,8 @@ $crocchetteGatti = new Cibo("Cibo", "Gatti", "Crocchette", "20 euro");
 $umidoGatti = new Cibo("Cibo", "Gatti", "Umido", "25 euro");
 
 // UTENTI
-$francesco = new Registration("Francesco", "Cataletto", "True", 40, "Yes");
-$stefano = new Registration("Stefano", "Corradi", "False", 60, "No");
+$francesco = new Registration("Francesco", "Cataletto", 1, 40, "Yes");
+$stefano = new Registration("Stefano", "Corradi", 0, 60, "No");
 
 ?>
 
@@ -133,7 +133,6 @@ $stefano = new Registration("Stefano", "Corradi", "False", 60, "No");
     <div class="utente consentito">
         <p>Nome: <?php echo $francesco->getName()?></p>
         <p>Cognome: <?php echo $francesco->getSurname()?></p>
-        <p>Carta di credito: <?php echo $francesco->getCreditCard()?></p>
         <p>Da pagare: <?php echo $francesco->getPrice()?></p>
         <p>Prezzo scontato: <?php echo $francesco->getDiscount()?></p>
         <p>Validità: <?php echo $francesco->getValidity()?></p>
@@ -141,7 +140,6 @@ $stefano = new Registration("Stefano", "Corradi", "False", 60, "No");
     <div class="utente negato">
         <p>Nome: <?php echo $stefano->getName()?></p>
         <p>Cognome: <?php echo $stefano->getSurname()?></p>
-        <p>Carta di credito: <?php echo $stefano->getCreditCard()?></p>
         <p>Da pagare: <?php echo $stefano->getPrice()?></p>
         <p>Prezzo scontato: <?php echo $stefano->getDiscount()?></p>
         <p>Validità: <?php echo $stefano->getValidity()?></p>
